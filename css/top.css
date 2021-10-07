@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(199, 199, 199, 0.664);
+}
+
+div.top {
+  position: fixed;
+  top: 0;
+  height: 44px;
+  width: 100%;
+  padding: 0 120px;
+  background-color: #3d3d3d;
+  color: rgba(201, 201, 201, 0.952);
+  z-index: 9;
+}
+
+div.top span {
+  height: 34px;
+  line-height: 34px;
+  vertical-align: middle;
+  float: right;
+  margin: 5px 10px;
+}
+
+div.top #moment {
+  float: left;
+}
+
+div.top #solarterms,
+div.top #nextsolarterms {
+  font-weight: bold;
+  color: #3d3d3d;
+  padding: 1px;
+  border-radius: 50%;
+  background: #c9c9c9;
+  -webkit-box-shadow: 0px 0px 0px #dadada, 0px 0px 30px #ffffff;
+          box-shadow: 0px 0px 0px #dadada, 0px 0px 30px #ffffff;
+}
+
+div.top #solarterms {
+  width: 34px;
+  height: 34px;
+  text-align: center;
+}
+
+div.top #solarterms svg {
+  font-size: 32px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-animation: taiji 5s linear infinite;
+          animation: taiji 5s linear infinite;
+}
+
+@-webkit-keyframes taiji {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes taiji {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+div.top #tonext {
+  float: right;
+  line-height: 44px;
+}
+
+div.top #tonext .dot {
+  padding: 0 2px;
+  float: left;
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight: bold;
+  -webkit-animation: tonext 2s linear infinite;
+          animation: tonext 2s linear infinite;
+  -webkit-animation-delay: calc(0.1s * var(--i));
+          animation-delay: calc(0.1s * var(--i));
+}
+
+@-webkit-keyframes tonext {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+  }
+  10% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50%,
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes tonext {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+  }
+  10% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50%,
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.top .st_meaning {
+  float: right;
+  color: transparent;
+  font-size: 16px;
+  background: -webkit-gradient(linear, left top, right top, from(#f6ffd3), to(#d7ff8d)), #000;
+  background: linear-gradient(to right, #f6ffd3, #d7ff8d), #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  height: 44px;
+  line-height: 44px;
+  margin-left: 160px;
+  -webkit-transform: rotatey(360deg);
+          transform: rotatey(360deg);
+}

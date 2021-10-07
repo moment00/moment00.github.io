@@ -1,0 +1,98 @@
+$background: rgb(61, 61, 61);
+$font-color: rgba(201, 201, 201, 0.952);
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(199, 199, 199, 0.664);
+}
+div.top {
+  position:fixed;
+  top: 0;
+  height: 44px;
+  width: 100%;
+  padding: 0 120px;
+  background-color: $background;
+  color: $font-color;
+  z-index: 9;
+  span {
+    height: 34px;
+    line-height: 34px;
+    vertical-align: middle;
+    float: right;
+    margin: 5px 10px;
+    // background-color: #fff;
+  }
+  #moment {
+    float: left;
+  }
+  #solarterms,
+  #nextsolarterms {
+    font-weight: bold;
+    color: $background;
+    padding: 1px;
+    border-radius: 50%;
+    background: #c9c9c9;
+    box-shadow: 0px 0px 0px #dadada, 0px 0px 30px #ffffff;
+  }
+  #solarterms {
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    svg {
+      font-size: 32px;
+      border-radius: 50%;
+      text-align: center;
+      // transform-origin: center 0px;
+      animation: taiji 5s linear infinite;
+    }
+  }
+  @keyframes taiji {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  #tonext {
+    float: right;
+    line-height: 44px;
+    .dot {
+      padding: 0 2px;
+      float: left;
+      font-size: 20px;
+      color: rgb(245, 245, 245);
+      font-weight: bold;
+      animation: tonext 2s linear infinite;
+      animation-delay: calc(0.1s * var(--i));
+    }
+  }
+}
+@keyframes tonext {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  10% {
+    transform: scale(0.8);
+  }
+  50%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.top .st_meaning {
+  float: right;
+  color: transparent;
+  font-size: 16px;
+  background: linear-gradient(to right, rgb(246, 255, 211), rgb(215, 255, 141)),
+    #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  height: 44px;
+  line-height: 44px;
+  margin-left: 160px;
+  transform: rotatey(360deg);
+}

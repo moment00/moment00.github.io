@@ -1,0 +1,72 @@
+body {
+  background-color: rgb(192, 192, 192);
+  background-image: url(../img/type.jpg);
+}
+.message {
+  width: 90%;
+  height: 51px;
+  line-height: 51px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(104, 104, 104);
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  div {
+    margin: 0 15px;
+  }
+  .stop,
+  .article {
+    width: 70px;
+    height: 40px;
+    background-color: rgb(189, 25, 87);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+.origin {
+  width: 1700px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: rgb(243, 243, 243);
+  .pline {
+    display: block;
+    width: 1700px;
+    height: auto;
+    background-color: rgb(223, 223, 223);
+    border: 2px solid #c0b6b5;
+    margin-top: 2px;
+    .zi {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      font-size: 25px;
+      border: 0.5px solid black;
+      background-color: rgb(64, 170, 212);
+    }
+    .ui {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      font-size: 25px;
+      border: 0.5px solid black;
+      background-color: rgb(155, 212, 64);
+    }
+  }
+}
+#input {
+  height: 30px;
+  width: 80px;
+  // background-color: rgb(200, 184, 238);
+  background-color: transparent;
+  outline: none;
+  color: rgb(241, 36, 231);
+  font-size: 25px;
+  position: absolute;
+  left: 106px;
+  top: 104px;
+}

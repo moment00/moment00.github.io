@@ -1,0 +1,143 @@
+.banner {
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f5f4e1;
+  margin-top: 94px;
+}
+
+.banner .focus {
+  width: 500px;
+  height: 100%;
+}
+
+.banner .focus ol {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 20px;
+  left: 30px;
+}
+
+.banner .focus ol li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid #aadbcb;
+}
+
+.banner .focus ol li.current {
+  background-color: #b7d86a;
+}
+
+.banner .focus .focus_container {
+  position: relative;
+  height: 500px;
+  height: 310px;
+  overflow: hidden;
+}
+
+.banner .focus .focus_container .to_left,
+.banner .focus .focus_container .to_right {
+  display: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  margin-top: -15px;
+  text-align: center;
+  line-height: 30px;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.banner .focus .focus_container .to_right {
+  right: 0;
+}
+
+.banner .focus .focus_container ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3000px;
+  height: 310px;
+}
+
+.banner .focus .focus_container ul li {
+  float: left;
+  width: 500px;
+  height: 310px;
+}
+
+.banner .focus .focus_container ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.banner .focus .focus_container ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner .focus .focus-meaning {
+  width: 500px;
+  height: 110px;
+  padding: 10px;
+  text-indent: 2rem;
+}
+
+.banner .poems-img {
+  width: 260px;
+  height: 100%;
+  background-color: #355c64;
+  background-image: url(../img/poems.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner .poems {
+  width: 340px;
+  height: 100%;
+  padding: 40px 40px;
+  background-color: #a45e5e;
+  background-image: url(../img/poems1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+  text-align: center;
+}
+
+.banner .poems .title {
+  text-align: center;
+  color: #19537d;
+  font-weight: bold;
+}
+
+.banner .poems .author {
+  display: block;
+  font-size: 14px;
+  margin: 7px auto;
+}
+
+.banner .poems .content {
+  display: inline-block;
+  width: 250px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.split {
+  height: 33px;
+  line-height: 33px;
+  background-color: #bdbdbd;
+  text-align: center;
+}

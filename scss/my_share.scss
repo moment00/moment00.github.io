@@ -1,0 +1,239 @@
+.share_title {
+  margin: 15px auto;
+  color: rgb(30, 110, 116);
+  font-size: 25px;
+}
+.share_soft {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  .soft_item {
+    position: relative;
+    width: 230px;
+    height: 320px;
+    background-color: #e6e6e6;
+    margin-right: 60px;
+
+    .innerpage {
+      overflow: hidden;
+      position: relative;
+      width: 200px;
+      height: 290px;
+      margin: 15px 15px;
+      border-radius: 0px;
+      background: #f2f2f2;
+      box-shadow: -1px -1px 7px #bdbdbd, 3px 3px 9px #8a8a8a;
+      cursor: pointer;
+      .dec1 {
+        position: absolute;
+        bottom: 30px;
+        width: 145px;
+        height: 145px;
+        background-color: #fedbd7;
+      }
+      .dec2 {
+        position: absolute;
+        left: 10px;
+        bottom: 40px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #003a83;
+      }
+      .dec3 {
+        position: absolute;
+        top: 0;
+        right: 11px;
+        li {
+          float: left;
+          width: 3px;
+          height: 150px;
+          border: 1px solid #c0b6b5;
+          margin-left: 6px;
+        }
+      }
+      .dec4 {
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+        width: 75px;
+        height: 7px;
+        background-color: #d45e01;
+      }
+      .soft_tag {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        width: 25px;
+        height: 163px;
+        background-color: pink;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 0.2rem;
+        line-height: 25px;
+        font-weight: 500;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: vertical-lr;
+      }
+      .soft_name {
+        position: absolute;
+        bottom: 105px;
+        right: 15px;
+        // background-color: orange;
+        width: 95px;
+        height: 30px;
+        line-height: 33px;
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 0.2rem;
+        // &::after {
+        //   content: "...";
+        //   position: absolute;
+        //   width: 33px;
+        //   top: 32px;
+        //   right: -21px;
+        //   background-color: #f2f2f2;
+        // }
+        a {
+          color: #810d0d;
+          display: block;
+          width: 95px;
+          height: 30px;
+          &:hover {
+            color: #f88c28;
+            text-shadow: 1px 1px 1px #c0b4a8;
+            transition: all 0.1s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.book {
+  display: flex;
+  li {
+    display: flex;
+    margin: 0 60px 0 0;
+    padding: 10px 0;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    -webkit-text-orientation: upright;
+    color: rgb(240, 26, 158);
+    width: 51px;
+    line-height: 51px;
+    box-shadow: -1px -1px 7px #bdbdbd, 3px 3px 9px #8a8a8a;
+    border-radius: 30px;
+    transition: all 0.5s;
+    &:hover {
+      transform: rotateY(360deg);
+    }
+    svg {
+      margin: 0 10px;
+      font-size: 30px;
+    }
+    div {
+      margin: 10px 0;
+      letter-spacing: 0.2rem;
+    }
+  }
+}
+.share_soft .soft_item .contentpage {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 320px;
+  background-color: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 0.5s;
+  z-index: 2;
+  cursor: pointer;
+  &::before {
+    content: " ";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #c9bbae;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+  }
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: #dfc7b1;
+    transform-origin: left;
+    transform: skewY(-45deg);
+  }
+  .imgBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    transition: 0.5s cubic-bezier(0.16, 1.47, 0.59, 0.79);
+    z-index: 1;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 320px;
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 1.5;
+    z-index: -1;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    a {
+      color: #5a664e;
+    }
+    div {
+      text-indent: 2rem;
+    }
+  }
+}
+// 宽度，必须的
+::-webkit-scrollbar {
+  width: 10px;
+}
+// 滚动条的滑轨样式
+::-webkit-scrollbar-track {
+  display: none;
+  background-color: #ededed;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+// 滑块样式
+::-webkit-scrollbar-thumb {
+  background-color: #535353;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+// 两侧按钮颜色
+::-webkit-scrollbar-button {
+  background-color: #919191;
+  display: none;
+}
+// 横向滚动条与纵向滚动条相交处尖角的颜色
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

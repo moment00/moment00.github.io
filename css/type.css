@@ -1,0 +1,83 @@
+body {
+  background-color: silver;
+  background-image: url(../img/type.jpg);
+}
+
+.message {
+  width: 90%;
+  height: 51px;
+  line-height: 51px;
+  background-color: #f0f0f0;
+  border: 1px solid #686868;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+.message div {
+  margin: 0 15px;
+}
+
+.message .stop,
+.message .article {
+  width: 70px;
+  height: 40px;
+  background-color: #bd1957;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.origin {
+  width: 1700px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #f3f3f3;
+}
+
+.origin .pline {
+  display: block;
+  width: 1700px;
+  height: auto;
+  background-color: #dfdfdf;
+  border: 2px solid #c0b6b5;
+  margin-top: 2px;
+}
+
+.origin .pline .zi {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  border: 0.5px solid black;
+  background-color: #40aad4;
+}
+
+.origin .pline .ui {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  border: 0.5px solid black;
+  background-color: #9bd440;
+}
+
+#input {
+  height: 30px;
+  width: 80px;
+  background-color: transparent;
+  outline: none;
+  color: #f124e7;
+  font-size: 25px;
+  position: absolute;
+  left: 106px;
+  top: 104px;
+}
