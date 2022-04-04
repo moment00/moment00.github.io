@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <UpdateInfo>
         <version>1.0</version>
-        <url>http://oldmoment.com/soure/v1.0.zip</url>
+        <url>moment00.github.io/soure/v1.0.zip</url>
         <log>1. 测试</log>
     </UpdateInfo>
